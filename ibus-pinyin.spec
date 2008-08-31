@@ -13,6 +13,7 @@ Source1:    http://scim-python.googlecode.com/files/pinyin-database-0.1.10.5.tar
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: python-devel
 BuildRequires: swig
+BuildArch:	noarch
 Requires:	ibus
 
 %description
@@ -23,7 +24,7 @@ ibus - Chinese Pinyin engine.
 cp %{SOURCE1} engine
 
 %build
-%configure2_5x
+%configure2_5x --build=%_host
 %make
 
 %install
