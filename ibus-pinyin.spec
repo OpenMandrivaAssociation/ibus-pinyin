@@ -1,4 +1,4 @@
-%define	version 0.1.1.20080901
+%define	version 0.1.1.20081004
 %define	release %mkrel 1
 
 Name:      ibus-pinyin
@@ -9,7 +9,7 @@ Group:     System/Internationalization
 License:   GPLv2+
 URL:       http://code.google.com/p/ibus/
 Source0:   http://ibus.googlecode.com/files/%{name}-%{version}.tar.gz
-Source1:    http://scim-python.googlecode.com/files/pinyin-database-0.1.10.5.tar.bz2
+Source1:   http://ibus.googlecode.com/files/pinyin-database-0.1.10.6.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: python-devel
 BuildRequires: swig
