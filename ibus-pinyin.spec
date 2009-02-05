@@ -1,5 +1,5 @@
-%define	version 0.1.1.20081004
-%define	release %mkrel 2
+%define	version 1.1.0.20090205
+%define	release %mkrel 1
 
 Name:      ibus-pinyin
 Summary:   ibus - Chinese Pinyin engine
@@ -14,7 +14,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: python-devel
 BuildRequires: swig
 BuildArch:	noarch
-Requires:	ibus
+Requires:	ibus >= 1.1.0
 
 %description
 ibus - Chinese Pinyin engine.
@@ -38,6 +38,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %name.lang
 %defattr(-,root,root)
-%{_bindir}/*
+%{_libexecdir}/*
 %{_datadir}/%{name}
-%{_datadir}/ibus/engine/*.engine
+%{_datadir}/ibus/component/*.xml
