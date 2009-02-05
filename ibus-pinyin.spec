@@ -1,5 +1,5 @@
 %define	version 1.1.0.20090205
-%define	release %mkrel 1
+%define	release %mkrel 2
 
 Name:      ibus-pinyin
 Summary:   ibus - Chinese Pinyin engine
@@ -13,7 +13,6 @@ Source1:   http://ibus.googlecode.com/files/pinyin-database-0.1.10.6.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: python-devel
 BuildRequires: swig
-BuildArch:	noarch
 Requires:	ibus >= 1.1.0
 
 %description
@@ -24,7 +23,7 @@ ibus - Chinese Pinyin engine.
 cp %{SOURCE1} engine
 
 %build
-%configure2_5x --build=%_host
+%configure2_5x
 %make
 
 %install
