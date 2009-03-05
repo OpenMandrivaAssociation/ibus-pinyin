@@ -1,4 +1,4 @@
-%define	version 1.1.0.20090225
+%define	version 1.1.0.20090303
 %define	release %mkrel 1
 
 Name:      ibus-pinyin
