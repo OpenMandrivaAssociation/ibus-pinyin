@@ -16,6 +16,7 @@ BuildRequires: ibus-devel >= 1.3.0
 BuildRequires: sqlite3-tools
 BuildRequires: sqlite3-devel
 BuildRequires: libuuid-devel
+BuildRequires: sigc++2.0-devel
 BuildRequires: intltool
 Requires:	ibus >= 1.3.0
 
