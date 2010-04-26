@@ -1,4 +1,4 @@
-%define	version 1.2.99.20091211
+%define	version 1.3.3
 %define	release %mkrel 1
 
 Name:      ibus-pinyin
@@ -12,12 +12,12 @@ Source0:   http://ibus.googlecode.com/files/%{name}-%{version}.tar.gz
 Source1:   http://ibus.googlecode.com/files/pinyin-database-1.2.99.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: python
-BuildRequires: ibus-devel >= 1.2.0
+BuildRequires: ibus-devel >= 1.3.0
 BuildRequires: sqlite3-tools
 BuildRequires: sqlite3-devel
 BuildRequires: libuuid-devel
 BuildRequires: intltool
-Requires:	ibus >= 1.2.0
+Requires:	ibus >= 1.3.0
 
 %description
 ibus - Chinese Pinyin engine.
