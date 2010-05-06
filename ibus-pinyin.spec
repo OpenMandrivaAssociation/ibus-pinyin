@@ -1,4 +1,4 @@
-%define	version 1.3.3
+%define	version 1.3.5
 %define	release %mkrel 1
 
 Name:      ibus-pinyin
@@ -16,7 +16,7 @@ BuildRequires: ibus-devel >= 1.3.0
 BuildRequires: sqlite3-tools
 BuildRequires: sqlite3-devel
 BuildRequires: libuuid-devel
-BuildRequires: sigc++2.0-devel
+BuildRequires: boost-devel
 BuildRequires: intltool
 Requires:	ibus >= 1.3.0
 
