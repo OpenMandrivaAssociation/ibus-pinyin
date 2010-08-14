@@ -1,5 +1,5 @@
 %define	version 1.3.10
-%define	release %mkrel 1
+%define	release %mkrel 2
 
 Name:      ibus-pinyin
 Summary:   ibus - Chinese Pinyin engine
@@ -18,6 +18,7 @@ BuildRequires: sqlite3-devel
 BuildRequires: libuuid-devel
 BuildRequires: boost-devel
 BuildRequires: intltool
+BuildRequires: opencc-devel
 Requires:	ibus >= 1.3.0
 
 %description
@@ -36,7 +37,7 @@ The open phrase database for ibus Pinyin engine.
 cp %{SOURCE1} data/db/open-phrase
 
 %build
-%configure2_5x --enable-db-open-phrase
+%configure2_5x --enable-db-open-phrase --enable-opencc
 %make
 
 %install
