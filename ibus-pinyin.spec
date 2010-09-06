@@ -1,5 +1,5 @@
-%define	version 1.3.10
-%define	release %mkrel 2
+%define	version 1.3.11
+%define	release %mkrel 1
 
 Name:      ibus-pinyin
 Summary:   ibus - Chinese Pinyin engine
