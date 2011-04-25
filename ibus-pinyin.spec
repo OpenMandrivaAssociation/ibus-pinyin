@@ -1,5 +1,5 @@
 %define	version 1.3.11
-%define	release %mkrel 1
+%define	release %mkrel 2
 
 Name:      ibus-pinyin
 Summary:   ibus - Chinese Pinyin engine
@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %name.lang
 %defattr(-,root,root)
-%{_libexecdir}/*
+%{_libexecdir}/ibus*
 %{_datadir}/%{name}
 %exclude %{_datadir}/ibus-pinyin/db/open-phrase.db
 %{_datadir}/ibus/component/*.xml
