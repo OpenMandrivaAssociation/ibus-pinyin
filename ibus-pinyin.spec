@@ -12,7 +12,7 @@ Source0:   http://ibus.googlecode.com/files/%{name}-%{version}.tar.gz
 Source1:   http://ibus.googlecode.com/files/pinyin-database-1.2.99.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: python
-BuildRequires: ibus-devel >= 1.3.0
+BuildRequires: ibus-devel >= 1.3.9-5
 BuildRequires: sqlite3-tools
 BuildRequires: sqlite3-devel
 BuildRequires: libuuid-devel
@@ -20,6 +20,7 @@ BuildRequires: boost-devel
 BuildRequires: intltool
 BuildRequires: opencc-devel
 Requires:	ibus >= 1.3.0
+Requires(post,preun): GConf2
 
 %description
 ibus - Chinese Pinyin engine.
@@ -48,6 +49,14 @@ rm -rf $RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post
+%post_ibus_register_engine pinyin zh_CN
+%post_ibus_register_engine bopomofo zh_TW
+
+%preun
+%preun_ibus_unregister_engine pinyin
+%preun_ibus_unregister_engine bopomofo
 
 %files -f %name.lang
 %defattr(-,root,root)
