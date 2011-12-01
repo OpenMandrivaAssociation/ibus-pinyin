@@ -42,13 +42,13 @@ cp %{SOURCE1} data/db/open-phrase
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 
 %find_lang %name
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %post
 %post_ibus_register_engine pinyin zh_CN
