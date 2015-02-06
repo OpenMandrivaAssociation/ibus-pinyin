@@ -1,7 +1,7 @@
 Summary:	ibus - Chinese Pinyin engine
 Name:		ibus-pinyin
 Version:	1.5.0
-Release:	1
+Release:	2
 Group:		System/Internationalization
 License:	GPLv2+
 Url:		http://code.google.com/p/ibus/
