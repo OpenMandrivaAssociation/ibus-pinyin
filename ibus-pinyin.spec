@@ -4,7 +4,7 @@ Version:	1.5.0
 Release:	2
 Group:		System/Internationalization
 License:	GPLv2+
-Url:		http://code.google.com/p/ibus/
+Url:		https://code.google.com/p/ibus/
 Source0:	http://ibus.googlecode.com/files/%{name}-%{version}.tar.gz
 Patch0:		ibus-pinyin-support-set-content-type-method.patch
 BuildRequires:	intltool
