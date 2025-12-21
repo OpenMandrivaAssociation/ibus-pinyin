@@ -7,6 +7,11 @@ License:	GPLv2+
 Url:		https://code.google.com/p/ibus/
 Source0:	http://ibus.googlecode.com/files/%{name}-%{version}.tar.gz
 Patch0:		ibus-pinyin-support-set-content-type-method.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(ibus-1.0) >= 1.3.99
 BuildRequires:	pkgconfig(pyzy-1.0) >= 0.0.8
